@@ -1,0 +1,28 @@
+﻿@model List<Vidly.Models.Customer>
+@{
+    ViewBag.title = "Customers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.title</h2>
+
+@if(Model.Count == 0)
+{
+
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Customer</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var customer in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id}, null)</td>
+            </tr>
+        }
+    </tbody>
+</table>
