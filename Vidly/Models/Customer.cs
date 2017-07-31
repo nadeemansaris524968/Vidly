@@ -8,7 +8,7 @@ namespace Vidly.Models
         public int Id { get; set; }
 
         [StringLength(255)]
-        [Required(ErrorMessage = "Please enter a Customer's Name.")]
+        [Required]
         public string Name { get; set; }
 
         public bool IsSubscribedToNewsletter { get; set; }
