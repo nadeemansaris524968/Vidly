@@ -7,12 +7,12 @@ namespace Vidly
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+            bundles.Add(new ScriptBundle("~/bundles/lib").Include(
                             "~/Scripts/jquery-{version}.js",
                               "~/Scripts/bootstrap.js",
                               "~/scripts/bootbox.js",
-                              "~/scripts/datatable/jquery.datatables.js",
-                              "~/scripts/datatable/datatables.bootstrap.js",
+                              "~/scripts/datatables/jquery.datatables.js",
+                              "~/scripts/datatables/datatables.bootstrap.js",
                               "~/Scripts/respond.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
