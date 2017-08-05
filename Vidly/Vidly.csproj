@@ -280,6 +280,10 @@
     <Compile Include="Migrations\201707311545131_RemoveBirthdateAsRequired.Designer.cs">
       <DependentUpon>201707311545131_RemoveBirthdateAsRequired.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708051552373_SeedUsers.cs" />
+    <Compile Include="Migrations\201708051552373_SeedUsers.Designer.cs">
+      <DependentUpon>201708051552373_SeedUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -605,6 +609,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707311545131_RemoveBirthdateAsRequired.resx">
       <DependentUpon>201707311545131_RemoveBirthdateAsRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708051552373_SeedUsers.resx">
+      <DependentUpon>201708051552373_SeedUsers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
