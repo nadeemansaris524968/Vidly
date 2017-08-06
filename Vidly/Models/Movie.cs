@@ -23,6 +23,8 @@ namespace Vidly.Models
         [Range(1, 20, ErrorMessage = "Range must be between 1 and 20.")]
         public byte NumberInStock { get; set; }
 
+        public byte? NumberAvailable { get; set; }
+
         [Display(Name = "Genre")]
         [Required]
         public byte GenreId { get; set; }
